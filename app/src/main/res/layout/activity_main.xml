@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/g"
+    tools:context=".MainActivity">
+    <ImageView
+        android:src="@drawable/trivia"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/txt_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="REGISTER "
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+   <EditText
+       android:id="@+id/ffff"
+       android:padding="9dp"
+       android:background="@drawable/ddd"
+       android:textSize="17sp"
+       android:layout_marginHorizontal="16dp"
+       android:textColorHint="@color/white"
+       android:hint="User name"
+       android:layout_marginBottom="590dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+   />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:padding="9dp"
+        android:background="@drawable/bg_edit"
+        android:textSize="17sp"
+        android:layout_marginHorizontal="16dp"
+        android:textColorHint="@color/white"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@+id/dddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txt_reg"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/ffff"
+        android:id="@+id/dddd"
+        android:padding="9dp"
+        android:background="@drawable/dd"
+        android:textSize="17sp"
+        android:layout_marginHorizontal="16dp"
+        android:textColorHint="@color/white"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:background="@drawable/circle"
+        android:layout_marginEnd="15dp"
+        android:text="                                 ♱NEXT♱                               ➞ "
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="490dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
